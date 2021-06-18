@@ -1,0 +1,36 @@
+body{
+  padding:20px 0 20px 0;
+  background-color: #dad9d7;
+}
+a{
+  text-decoration: none;
+  color:#000;
+}
+.header{
+  perspective: 1000px;
+}
+
+.title{
+  height:85px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transform:rotateY(0deg);
+  cursor: pointer;
+}
+.title_name{
+  font-family: 'Pacifico', cursive;
+}
+
+.title_name:hover{
+  transform:rotateY();
+}
+
+.select{
+  display:flex;
+
+}
+
+.select li{
+  padding: 20px;
+}

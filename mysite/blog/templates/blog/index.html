@@ -1,45 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <link rel="stylesheet" href="./reset.css">
-  <link rel="stylesheet" href="./foodbox.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-  <title>food box</title>
-</head>
-<body>
-  <header class="header">
-    <div class="title">
-      <a href="./index.html" class="title_name">food box</a>
-    </div>
+{% extends 'blog/base.html' %}
 
-    <nav class="container">
-      <ul class="select">
-        <li>
-          <a href=""  class="menu-button">order</a>
-        </li>
-        <li>
-          <a href=""  class="menu-button">order inquiry</a>
-        </li>
-        <li>
-          <a href=""  class="menu-button">shopping basket</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+{% block content %}
+
 
     <section class="food-img">
-      <div class="food"></div>
+      <div class="food-img-slide">
+
+      </div>
+      <div class="button-dots">
+        <button class="food_img_button"></button>
+        <button class="food_img_button"></button>
+        <button class="food_img_button"></button>
+        <button class="food_img_button"></button>
+      </div>
     </section>
 
     <section class="food-explain">
-
-    </section>
-
-    <section class="benefit-explain">
 
     </section>
 
@@ -47,10 +23,4 @@
 
     </footer>
 
-
-
-
-
-  <script></script>
-</body>
-</html>
+{% endblock %}

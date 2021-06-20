@@ -85,13 +85,82 @@ a{
 }
 
 
-.food-img-slide{
-  width:100vw;
+.contents{
+  display:flex;
+
+}
+
+.food-explain{
+  width:50vw;
   height:70vh;
-  background-color: #000;
+}
+
+.food-img{
+  position: relative;
+}
+
+.food-img .black-background{
+  width:50vw;
+  height:70vh;
+  background-color: rgba(0,0,0,0.6);
+  position: absolute;
+  z-index: 1;
+  color:#fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.food-img .black-background .food-img-text{
+  color:#fff;
+  font-size: 2rem;
+  font-weight: 700;
+  position: absolute;
+  top:5%;
+  left:7%;
+
+}
+
+.food-img-slide{
+  position: absolute;
+  width:50vw;
+  height:70vh;
+  /* background-size: cover; */
 }
 
 /*  음식 사진들 */
-.jeyukbokkeum-img{
 
+.jeyukbokkeum-img{
+  background:url("./jeyuk.jpg") no-repeat ;
+  background-size:100% auto;
+}
+.dakbogum-img{
+  background:url("./dak-bogumtang.jpg") no-repeat;
+  background-size:100% auto;
+  /* background-position: 0% 0%; */
+}
+.samgub-img{
+  background:url("./samgub.jpg") no-repeat;
+  background-size:100% auto;
+}
+.boggumbab-img{
+  background:url("./shirmp-bogumbab.jpg") no-repeat;
+  background-size:100% auto;
+  /* background-size:99% auto; */
+}
+
+
+.button-dots{
+
+  position:absolute;
+  bottom:0;
+  right:0;
+  z-index: 2;
+  display: flex;
+}
+
+.button-dots .food_img_button{
+  width:26px;
+  height:8px;
+  border-radius: 28%;
+  background-color:rgba(255,255,255,0.8);
+  margin:4px;
 }

@@ -1,15 +1,99 @@
+.order-page{
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:#63656a;
+}
 .dishes{
   display:flex;
   justify-content: center;
   align-items: center;
 }
+.today-dish{
+  font-weight: 700;
+  font-size: 2.6rem;
+}
 
+.main-dish{
+  margin-right:50px;
+}
+.not-main-dish{
+  margin-left:40px;
+}
+.dish-title{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.7rem;
+}
 
+.main-food{
+  margin-bottom:13px;
+}
+
+.main-dish-button{
+  color:#ff7f00;
+  border:none;
+  border-radius: 10px;
+  cursor:pointer;
+  transition:background-color 0.2s;
+}
+.main-dish-button:hover{
+  background-color: rgb(65, 81, 255);
+  color:#fff;
+}
+
+.side-dish,
+.rice,
+.soup,
+.dessert{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.payment{
+  display:flex;
+  position: absolute;
+  right:10%;
+  bottom:-10%;
+}
 
 .total-price{
-  width:200px;
+  width:120px;
   height:40px;
-  border:1px solid #000;
+  border-radius: 8px;
+  border:none;
+  background-color: rgb(65, 81, 255);
+  color:#fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s;
+  margin-right:5px;
+}
+.total-price:hover{
+  opacity: 0.9;
+}
+.payment-confirm{
+  width:120px;
+  height:40px;
+  border-radius: 8px;
+  border:none;
+  color: rgb(65, 81, 255);
+  background-color:#fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s;
+}
+.payment-confirm:hover{
+  opacity:0.6;
 }
 
 
@@ -32,6 +116,7 @@
 .dish-kinds.add:hover{
   background-color: rgb(146, 57, 255);
 }
+
 
 
 .move-address{

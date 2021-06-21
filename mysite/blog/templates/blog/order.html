@@ -1,143 +1,147 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-  <h1 class="todat-dish">Today's dish</h1>
 
-<div class="dishes">
-  <div class="main dish">
-    <h2>MAIN DISH</h2>
-    <!-- 제육볶음 -->
-    <div class="food-jeyuk">
-      <div class="food-name">
-        제육볶음
+<div class="order-page">
+  <h1 class="today-dish">Today's dish</h1>
+  <div class="dishes">
+
+    <div class="main-dish">
+      <h2 class="dish-title">MAIN DISH</h2>
+      <!-- 제육볶음 -->
+      <div class="food-jeyuk main-food">
+        <div class="food-name">
+          제육볶음
+        </div>
+        <div class="food-price">
+          7000
+        </div>
+
+        파<input type="checkbox" checked>
+        당근<input type="checkbox" checked>
+        양파<input type="checkbox" checked>
+        고추<input type="checkbox" checked>
+
+        <button class="add-food-jeyuk-price main-dish-button">추가</button>
+        <button class="delete-food-jeyuk-price main-dish-button">취소</button>
       </div>
-      <div class="food-price">
-        7000
+      <!-- 닭볶음탕 -->
+      <div class="food-dakbogum main-food">
+        <div class="food-name">
+          닭볶음탕
+        </div>
+        <div class="food-price">
+          8000
+        </div>
+
+        버섯<input type="checkbox" checked>
+        당근<input type="checkbox" checked>
+        양파<input type="checkbox" checked>
+        감자<input type="checkbox" checked>
+
+        <button class="add-food-dakbogum-price main-dish-button">추가</button>
+        <button class="delete-food-dakbogum-price main-dish-button">취소</button>
+      </div>
+      <!-- 우삼겹숙주볶음 -->
+      <div class="food-samgub main-food">
+        <div class="food-name">
+          우삼겹숙주볶음
+        </div>
+        <div class="food-price">
+          6000
+        </div>
+
+        콩나물<input type="checkbox" checked>
+        시금치<input type="checkbox" checked>
+        고추<input type="checkbox" checked>
+        대파<input type="checkbox" checked>
+
+        <button class="add-food-samgub-price main-dish-button">추가</button>
+        <button class="delete-food-samgub-price main-dish-button">취소</button>
+      </div>
+      <!-- 해물볶음밥 -->
+      <div class="food-bogumbab main-food">
+        <div class="food-name">
+          해물볶음밥
+        </div>
+        <div class="food-price">
+          7000
+        </div>
+
+        새우<input type="checkbox" checked>
+        오징어<input type="checkbox" checked>
+        당근<input type="checkbox" checked>
+        버섯<input type="checkbox" checked>
+
+        <button class="add-food-bogumbab-price main-dish-button">추가</button>
+        <button class="delete-food-bogumbab-price main-dish-button">취소</button>
+
       </div>
 
-      파<input type="checkbox" checked>
-      당근<input type="checkbox" checked>
-      양파<input type="checkbox" checked>
-      고추<input type="checkbox" checked>
-
-      <button class="add-food-jeyuk-price">추가</button>
-      <button class="delete-food-jeyuk-price">취소</button>
     </div>
-    <!-- 닭볶음탕 -->
-    <div class="food-dakbogum">
-      <div class="food-name">
-        닭볶음탕
-      </div>
-      <div class="food-price">
-        8000
+
+    <div class="not-main-dish">
+      <div class="side-dish">
+        <h2 class="dish-title">SIDE DISH</h2>
+        <p>500</p>
+        <div class="food-align side-dishes-kinds">
+          <button class="dish-kinds">김치</button>
+          <button class="dish-kinds">젓갈</button>
+          <button class="dish-kinds">멸치</button>
+          <button class="dish-kinds add">선택 안함</button>
+        </div>
       </div>
 
-      버섯<input type="checkbox" checked>
-      당근<input type="checkbox" checked>
-      양파<input type="checkbox" checked>
-      감자<input type="checkbox" checked>
+      <div class="rice">
+        <h2 class="dish-title">RICE</h2>
+        <p>1000</p>
+        <div class="food-align rice-dishes-kinds">
+          <button class="dish-kinds">흰 쌀밥</button>
+          <button class="dish-kinds">현미밥</button>
+          <button class="dish-kinds">잡곡밥</button>
+          <button class="dish-kinds add">선택 안함</button>
+        </div>
 
-      <button class="add-food-dakbogum-price">추가</button>
-      <button class="delete-food-dakbogum-price">취소</button>
+      </div>
+
+      <div class="soup">
+        <h2 class="dish-title">SOUP</h2>
+        <p2>1000</p2>
+        <div class="food-align soup-dishes-kinds">
+          <button class="dish-kinds">미역국</button>
+          <button class="dish-kinds">콩나물 국</button>
+          <button class="dish-kinds">소고기 무국</button>
+          <button class="dish-kinds add">선택 안함</button>
+        </div>
+
+      </div>
+
+      <div class="dessert">
+        <h2 class="dish-title">계절 과일(free!)</h2>
+        <p>Select One!!</p>
+        <div class="food-align dessert-dishes-kinds">
+          <button class="dish-kinds">수박</button>
+          <button class="dish-kinds">메론</button>
+          <button class="dish-kinds">산딸기</button>
+          <button class="dish-kinds add">선택 안함</button>
+        </div>
+
+      </div>
     </div>
-    <!-- 우삼겹숙주볶음 -->
-    <div class="food-samgub">
-      <div class="food-name">
-        우삼겹숙주볶음
-      </div>
-      <div class="food-price">
-        6000
-      </div>
 
-      콩나물<input type="checkbox" checked>
-      시금치<input type="checkbox" checked>
-      고추<input type="checkbox" checked>
-      대파<input type="checkbox" checked>
 
-      <button class="add-food-samgub-price">추가</button>
-      <button class="delete-food-samgub-price">취소</button>
-    </div>
-    <!-- 해물볶음밥 -->
-    <div class="food-bogumbab">
-      <div class="food-name">
-        해물볶음밥
-      </div>
-      <div class="food-price">
-        7000
-      </div>
-
-      새우<input type="checkbox" checked>
-      오징어<input type="checkbox" checked>
-      당근<input type="checkbox" checked>
-      버섯<input type="checkbox" checked>
-
-      <button class="add-food-bogumbab-price">추가</button>
-      <button class="delete-food-bogumbab-price">취소</button>
-
-    </div>
 
   </div>
 
-  <div class="not-main-dish">
-    <div class="side-dish">
-      <h2>SIDE DISH</h2>
-      <p>500</p>
-      <div class="food-align side-dishes-kinds">
-        <button class="dish-kinds">김치</button>
-        <button class="dish-kinds">젓갈</button>
-        <button class="dish-kinds">멸치</button>
-        <button class="dish-kinds add">선택 안함</button>
-      </div>
-    </div>
-
-    <div class="rice">
-      <h2>RICE</h2>
-      <p>1000</p>
-      <div class="food-align rice-dishes-kinds">
-        <button class="dish-kinds">흰 쌀밥</button>
-        <button class="dish-kinds">현미밥</button>
-        <button class="dish-kinds">잡곡밥</button>
-        <button class="dish-kinds add">선택 안함</button>
-      </div>
+  <div class="payment">
+    <div class="total-price">
 
     </div>
-
-    <div class="soup">
-      <h2>SOUP</h2>
-      <p2>1000</p2>
-      <div class="food-align soup-dishes-kinds">
-        <button class="dish-kinds">미역국</button>
-        <button class="dish-kinds">콩나물 국</button>
-        <button class="dish-kinds">소고기 무국</button>
-        <button class="dish-kinds add">선택 안함</button>
-      </div>
-
-    </div>
-
-    <div class="dessert">
-      <h2>계절 과일(free!)</h2>
-      <p>Select One!!</p>
-      <div class="food-align dessert-dishes-kinds">
-        <button class="dish-kinds">수박</button>
-        <button class="dish-kinds">메론</button>
-        <button class="dish-kinds">산딸기</button>
-        <button class="dish-kinds add">선택 안함</button>
-      </div>
-
-    </div>
+    <button class="payment-confirm">payment</button>
+      <a href="{% url 'post_complete' %}" class="move-address">move</a>
   </div>
-
-
-
 </div>
 
-<div class="payment">
-  <div class="total-price">
-
-  </div>
-  <button class="payment-confirm">payment</button>
-    <a href="{% url 'post_complete' %}" class="move-address">move</a>
-</div>
 
 
 {% endblock %}

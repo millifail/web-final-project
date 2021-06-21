@@ -95,6 +95,9 @@ a{
   height:70vh;
 }
 
+.food-desc{
+  font-size: 1.5rem;
+}
 .food-img{
   position: relative;
 }
@@ -131,11 +134,11 @@ a{
 .jeyukbokkeum-img{
   background:url("./jeyuk.jpg") no-repeat ;
   background-size:100% auto;
+  background-position: 0 50%;
 }
 .dakbogum-img{
   background:url("./dak-bogumtang.jpg") no-repeat;
   background-size:100% auto;
-  /* background-position: 0% 0%; */
 }
 .samgub-img{
   background:url("./samgub.jpg") no-repeat;
@@ -144,7 +147,7 @@ a{
 .boggumbab-img{
   background:url("./shirmp-bogumbab.jpg") no-repeat;
   background-size:100% auto;
-  /* background-size:99% auto; */
+  background-position: 0 40%;
 }
 
 

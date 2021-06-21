@@ -21,3 +21,7 @@ def post_list(request):
 def post_detail(request):
 
     return render(request, 'blog/index.html')
+
+def post_order(request):
+
+    return render(request, 'blog/order.html')

@@ -1,0 +1,118 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+  <h1>Today's dish</h1>
+
+  <div class="main dish">
+    <h2>MAIN DISH</h2>
+    <!-- 제육볶음 -->
+    <div class="food-jeuuk">
+      <div class="food-name">
+        제육볶음
+      </div>
+      <div class="food-price">
+        7000
+      </div>
+      <select name="수량" id="food-num">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+
+      파<input type="checkbox" checked>
+      당근<input type="checkbox" checked>
+      양파<input type="checkbox" checked>
+      고추<input type="checkbox" checked>
+
+      <button class="select-food">추가</button>
+    </div>
+    <!-- 닭볶음탕 -->
+    <div class="food-jeuuk">
+      <div class="food-name">
+        닭볶음탕
+      </div>
+      <div class="food-price">
+        8000
+      </div>
+      <select name="수량" id="food-num">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+
+      버섯<input type="checkbox" checked>
+      당근<input type="checkbox" checked>
+      양파<input type="checkbox" checked>
+      감자<input type="checkbox" checked>
+
+      <button class="select-food">추가</button>
+    </div>
+    <!-- 우삼겹숙주볶음 -->
+    <div class="food-jeuuk">
+      <div class="food-name">
+        우삼겹숙주볶음
+      </div>
+      <div class="food-price">
+        6000
+      </div>
+      <select name="수량" id="food-num">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+
+      콩나물<input type="checkbox" checked>
+      시금치<input type="checkbox" checked>
+      고추<input type="checkbox" checked>
+      대파<input type="checkbox" checked>
+
+      <button class="select-food">추가</button>
+    </div>
+    <!-- 해물볶음밥 -->
+    <div class="food-jeuuk">
+      <div class="food-name">
+        해물볶음밥
+      </div>
+      <div class="food-price">
+        7000
+      </div>
+      <select name="수량" id="food-num">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+
+      새우<input type="checkbox" checked>
+      오징어<input type="checkbox" checked>
+      당근<input type="checkbox" checked>
+      버섯<input type="checkbox" checked>
+
+      <button class="select-food">추가</button>
+    </div>
+
+  </div>
+
+  <div class="side dish">
+
+  </div>
+
+  <div class="rice">
+
+  </div>
+
+  <div class="soup">
+
+  </div>
+
+  <div class="dessert">
+
+  </div>
+
+  <div class="payment">
+    <div class="total price">
+
+    </div>
+    <button>payment</button>
+  </div>
+
+{% endblock %}

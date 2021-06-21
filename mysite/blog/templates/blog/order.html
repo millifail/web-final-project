@@ -3,6 +3,7 @@
 {% block content %}
   <h1>Today's dish</h1>
 
+<div class="dishes">
   <div class="main dish">
     <h2>MAIN DISH</h2>
     <!-- 제육볶음 -->
@@ -93,26 +94,46 @@
   </div>
 
   <div class="side dish">
-
+    <h2>SIDE DISH</h2>
+    <p>500</p>
+    김치<input type="checkbox">
+    젓갈<input type="checkbox">
+    멸치<input type="checkbox">
+    선택안함<input type="checkbox">
   </div>
 
   <div class="rice">
-
+    <h2>RICE</h2>
+    <p>1000</p>
+    흰 쌀밥<input type="checkbox">
+    현미밥<input type="checkbox">
+    잡곡밥<input type="checkbox">
+    선택 안함<input type="checkbox">
   </div>
 
   <div class="soup">
-
+    <h2>SOUP</h2>
+    <p2>1000</p2>
+    미역국<input type="checkbox">
+    콩나물 국<input type="checkbox">
+    선택 안함<input type="checkbox">
   </div>
 
   <div class="dessert">
-
+    <h2>계절 과일</h2>
+    수박<input type="checkbox">
+    메론<input type="checkbox">
   </div>
 
-  <div class="payment">
-    <div class="total price">
 
-    </div>
-    <button>payment</button>
+</div>
+
+<div class="payment">
+  <div class="total price">
+
   </div>
+  <button>payment</button>
+</div>
+
 
 {% endblock %}

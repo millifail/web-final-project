@@ -1,7 +1,7 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-  <h1>Today's dish</h1>
+  <h1 class="todat-dish">Today's dish</h1>
 
 <div class="dishes">
   <div class="main dish">
@@ -135,7 +135,8 @@
   <div class="total-price">
 
   </div>
-  <button>payment</button>
+  <button class="payment-confirm">payment</button>
+    <a href="{% url 'post_complete' %}" class="move-address">move</a>
 </div>
 
 

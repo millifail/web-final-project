@@ -1,11 +1,10 @@
 .dishes{
   display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* .food-align{
-  display:flex;
-  flex-direction: column;
-} */
+
 
 .total-price{
   width:200px;
@@ -32,4 +31,9 @@
 }
 .dish-kinds.add:hover{
   background-color: rgb(146, 57, 255);
+}
+
+
+.move-address{
+  display:none;
 }

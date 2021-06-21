@@ -1,0 +1,58 @@
+.main{
+  position: relative;
+}
+.complete{
+  position:absolute;
+  top:148%;
+  left:27%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.thanks{
+  font-family: 'Dela Gothic One', cursive;
+  font-size: 33px;
+  font-weight: 700;
+  color:#63656a;
+  margin-bottom: 10px;
+}
+/* .complete-hr{
+  color:#ff7f00;
+  height:0.18rem;
+  opacity: 1;
+} */
+
+.delivery-msg{
+  font-family: 'Dela Gothic One', cursive;
+  font-size: 25px;
+  font-weight: 500;
+  color:#63656a;
+}
+
+.truck-img{
+
+  width:300px;
+  height:auto;
+}
+
+.complete-button{
+  font-family: 'Dela Gothic One', cursive;
+  width:12rem;
+  height: 4rem;
+  background-color:#fff;
+  color:#000;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.complete-button:hover{
+  background-color: #ff7f00;
+  color:#fff;
+}

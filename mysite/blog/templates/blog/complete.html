@@ -15,28 +15,35 @@
   <title>food box</title>
 </head>
 <body>
-  <header class="header">
-    <div class="title">
-      <a href="{% url 'post_detail' %}" class="title_name">food box</a>
-    </div>
+  <div class="main">
+    <header class="header">
+      <div class="title">
+        <a href="{% url 'post_detail' %}" class="title_name">food box</a>
+      </div>
 
-    <div class="select-menu">
-        <ul class="select">
-          <li>
-            <a href="{% url 'post_order' %}"  class="menu-button">order</a>
-          </li>
-          <li>
-            <a href=""  class="menu-button inquiry">order inquiry</a>
-          </li>
-          <li>
-            <a href=""  class="menu-button shopping">shopping basket</a>
-          </li>
-        </ul>
-    </div>
-  </header>
-  {% block content%}
+      <div class="select-menu">
+          <ul class="select">
+            <li>
+              <a href="{% url 'post_order' %}"  class="menu-button">order</a>
+            </li>
+            <li>
+              <a href=""  class="menu-button">order inquiry</a>
+            </li>
+            <li>
+              <a href=""  class="menu-button">shopping basket</a>
+            </li>
+          </ul>
+      </div>
+    </header>
 
-  {% endblock %}
+    <div class="complete">
+      <h1 class="thanks">이용해주셔서 감사합니다!</h1>
+      <h2 class="delivery-msg">내일 아침, 따뜻한 밥이 고객님의 품으로 달려갑니다~~</h2>
+      <img src="{% static 'css/truck5.png' %}" alt="free delivery" class="truck-img">
+      <a href="{% url 'post_detail' %}" class="complete-button">go back</a>
+    </div>
+  </div>
+
 
   <footer class="end">
     <div class="imformation">
@@ -53,6 +60,5 @@
 
   <script src="{% static 'js/base.js' %}"></script>
   <script src="{% static 'js/foodbox.js' %}"></script>
-  <script src="{% static 'js/order.js' %}"></script>
 </body>
 </html>

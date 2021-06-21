@@ -25,3 +25,7 @@ def post_detail(request):
 def post_order(request):
 
     return render(request, 'blog/order.html')
+
+def post_complete(request):
+
+    return render(request, 'blog/complete.html')    

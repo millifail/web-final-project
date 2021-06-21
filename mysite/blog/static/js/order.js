@@ -11,6 +11,8 @@ const side_dishes_kinds=document.querySelector('.food-align.side-dishes-kinds');
 const rice_dishes_kinds=document.querySelector('.food-align.rice-dishes-kinds');
 const soup_dishes_kinds=document.querySelector('.food-align.soup-dishes-kinds');
 const dessert_dishes_kinds=document.querySelector('.food-align.dessert-dishes-kinds');
+const payment_comfirm=document.querySelector('.payment-confirm');
+const move_address=document.querySelector('.move-address')
 let side_num=0; //side menu 개수
 let rice_num=0;
 let soup_num=0;
@@ -19,7 +21,10 @@ let dessert_num=0;
 let food_num=[0,0,0,0];    //제육, 닭볶음탕, 우삼겹, 볶음밥   개수
 
 let price=0;
-total_price.innerHTML='total: '+price;
+if(total_price){
+    total_price.innerHTML='total: '+price;
+}
+
 
 function calculate_price(){
   price=(food_num[0]*7000) + (food_num[1]*8000)+ (food_num[2]*6000)+(food_num[3]*7000)+ (side_num*500)+(rice_num*1000) +(soup_num*1000)+(dessert_num*0);
@@ -102,9 +107,9 @@ for(let i =0; i<3; i++){
 }
 side_dishes_kinds.childNodes[7].addEventListener('click',function(e){
     side_dishes_kinds.childNodes[7].classList.add('add');
-    side_dishes_kinds.childNodes[1].classList.remove('add')
-    side_dishes_kinds.childNodes[3].classList.remove('add')
-    side_dishes_kinds.childNodes[5].classList.remove('add')
+    side_dishes_kinds.childNodes[1].classList.remove('add');
+    side_dishes_kinds.childNodes[3].classList.remove('add');
+    side_dishes_kinds.childNodes[5].classList.remove('add');
     side_num=0;
     calculate_price();
 
@@ -133,9 +138,9 @@ for(let i =0; i<3; i++){
 }
 rice_dishes_kinds.childNodes[7].addEventListener('click',function(e){
     rice_dishes_kinds.childNodes[7].classList.add('add');
-    rice_dishes_kinds.childNodes[1].classList.remove('add')
-    rice_dishes_kinds.childNodes[3].classList.remove('add')
-    rice_dishes_kinds.childNodes[5].classList.remove('add')
+    rice_dishes_kinds.childNodes[1].classList.remove('add');
+    rice_dishes_kinds.childNodes[3].classList.remove('add');
+    rice_dishes_kinds.childNodes[5].classList.remove('add');
     rice_num=0;
     calculate_price();
 
@@ -162,9 +167,9 @@ for(let i =0; i<3; i++){
 }
 soup_dishes_kinds.childNodes[7].addEventListener('click',function(e){
     soup_dishes_kinds.childNodes[7].classList.add('add');
-    soup_dishes_kinds.childNodes[1].classList.remove('add')
-    soup_dishes_kinds.childNodes[3].classList.remove('add')
-    soup_dishes_kinds.childNodes[5].classList.remove('add')
+    soup_dishes_kinds.childNodes[1].classList.remove('add');
+    soup_dishes_kinds.childNodes[3].classList.remove('add');
+    soup_dishes_kinds.childNodes[5].classList.remove('add');
     soup_num=0;
     calculate_price();
 
@@ -208,5 +213,20 @@ dessert_dishes_kinds.childNodes[7].addEventListener('click',function(e){
     dessert_dishes_kinds.childNodes[5].classList.remove('add');
     dessert_num=0;
     calculate_price();
+
+});
+
+
+payment_comfirm.addEventListener('click',function(){
+  if(price===0){
+    alert('담긴 상품이 없습니다!')
+  }
+  else{
+    let answer = window.confirm("총 "+price+ ", 결제하시겠습니까?");
+    if (answer) {
+      move_address.click();
+    }
+  }
+
 
 });
